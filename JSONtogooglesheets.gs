@@ -15,7 +15,7 @@ function fetchData() {
   
   // Manipulate data for insertion
   var values = [];
-  for(var i=0;i<data.length;i++){
+  for(var i = 0; i < data.length; i++){
     var dateObject= new Date(data[i]["date"]);
     var weekday = dateObject.toLocaleDateString('en-US', { weekday: 'long' }); 
     values.push([data[i]["date"],data[i]["new_cases"], weekday]);
